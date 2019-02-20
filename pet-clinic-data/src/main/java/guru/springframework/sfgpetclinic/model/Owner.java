@@ -19,7 +19,7 @@ public class Owner extends Person {
                  String city, String telephone, Set<Pet> pets) {
         super(id, firstName, lastName);
         this.address = address;
-        City = city;
+        this.city = city;
         this.telephone = telephone;
         this.pets = pets;
     }
@@ -28,7 +28,7 @@ public class Owner extends Person {
     private String address;
 
     @Column(name = "city")
-    private String City;
+    private String city;
 
     @Column(name = "telephone")
     private String telephone;
